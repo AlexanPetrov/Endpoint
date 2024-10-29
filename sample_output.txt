@@ -1,0 +1,54 @@
+(.venv) ➜  Endpoint python3 src/directories.py
+Directory structure initialized.
+Enter commands (e.g., CREATE, MOVE, DELETE, LIST) or 'exit' to quit:
+> create fruits
+CREATE fruits
+> create vegetables
+CREATE vegetables
+> create grains
+CREATE grains
+> create fruits/apples
+CREATE fruits/apples
+> create fruits/apples/fuji
+CREATE fruits/apples/fuji
+> list
+fruits
+  apples
+    fuji
+grains
+vegetables
+
+> create grains/squash
+CREATE grains/squash
+> move grains/squash vegetables
+MOVE grains/squash vegetables
+> create foods
+CREATE foods
+> move grains foods
+MOVE grains foods
+> move fruits foods
+MOVE fruits foods
+> move vegetables foods
+MOVE vegetables foods
+> list
+foods
+  fruits
+    apples
+      fuji
+  grains
+  vegetables
+    squash
+
+> delete fruits/apples
+Cannot delete fruits/apples - fruits does not exist
+> delete foods/fruits/apples
+DELETE foods/fruits/apples
+> list
+foods
+  fruits
+  grains
+  vegetables
+    squash
+
+> exit
+Exiting program.

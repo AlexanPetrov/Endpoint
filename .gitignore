@@ -1,0 +1,14 @@
+src/__pycache__/
+tests/__pycache__/
+*.py[cod]
+
+.venv/
+
+logs/
+logs/*.log
+
+.pytest_cache/
+
+.env
+
+.DS_Store
