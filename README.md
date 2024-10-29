@@ -2,70 +2,49 @@
 
 This project simulates a directory structure with commands to create, move, delete, and list directories. The solution is implemented in Python with logging to track actions & errors. Unit testing is utilized with pytest to validate each command's functionality.
 
-No helper libraries are used except for pytest for testing convinience purposes.
-Solution does not create folders on host machine. Input is taken and output is produced. 
+No helper libraries are used except for pytest for testing convenience purposes.  
+Solution does not create folders on the host machine. Input is taken and output is produced.
 
-# Project structure (excluding .gitignore and all files marked in it)
+## Setup Instructions
 
-└── Endpoint
-    ├── README.md
-    ├── logs
-    │   ├── commands.log
-    │   └── errors.log
-    ├── requirements.txt
-    ├── sample_output.txt
-    ├── src
-    │   ├── directories.py
-    │   ├── directory_node.py
-    │   ├── directory_tree.py
-    │   └── logging_config.py
-    └── tests
-        ├── conftest.py
-        ├── test_create.py
-        ├── test_delete.py
-        ├── test_list.py
-        └── test_move.py
+git clone <repository-url>  
+cd Endpoint  
 
-# Setup Instructions
+## Environment Setup
 
-git clone <repository-url>
-cd Endpoint
+python3 -m venv .venv  
 
-# Environment Setup
+source .venv/bin/activate  
 
-python3 -m venv .venv
+> To exit the virtual environment:  
+deactivate  
 
-source .venv/bin/activate
+## Install dependencies  
 
-<!-- To exit Virtual environment: -->
-deactivate 
+pip3 install -r requirements.txt  
 
-# Install dependencies
+> To update `requirements.txt` with any additional packages:  
+pip3 freeze > requirements.txt  
 
-pip3 install -r requirements.txt
+## Run the Script  
 
-<!-- To add more requirements -->
-pip3 freeze > requirements.txt
+cd src  
+python3 directories.py  
 
-# Run the Script
+## Test Commands  
 
-cd src
-python3 directories.py
+- `CREATE <path>`  
+- `MOVE <source-path> <destination-path>`  
+- `DELETE <path>`  
+- `LIST`  
+- `exit`  
 
-# Test Commands
+## Run the Tests  
 
-CREATE <path>
-MOVE <source-path> <destination-path>
-DELETE <path>
-LIST
-exit
+cd Endpoint  
+pytest tests/ -v  
 
-# Run the Tests
+## Python Version and Package Manager  
 
-cd Endpoint 
-pytest tests/ -v
-
-# Python Version and Package Manager
-
-This project uses Python 3 and pip3 for package management. 
-If your system defaults to python & pip for Python 3 and pip3, please use python & pip.
+This project uses Python 3 and pip3 for package management.  
+If your system defaults to `python` & `pip` for Python 3 and pip3, please use `python` & `pip` instead.  
