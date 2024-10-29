@@ -1,9 +1,9 @@
 # Directory Management Project
 
-This project simulates a directory structure with commands to **create**, **move**, **delete**, and **list** directories. The solution is implemented in **Python** with logging to track actions & errors. Unit testing is utilized with **pytest** to validate each command's functionality.
+This project simulates a directory structure with commands to **create**, **move**, **delete**, and **list** directories. The solution is implemented in **Python** with logging to track actions & errors. Unit testing is done with **pytest** to validate each command's functionality.
 
 No helper libraries are used except for **pytest** for testing convenience purposes.  
-Solution does not create folders on the host machine. Input is taken and output is produced.
+Solution does not create folders on the host machine. Input is taken, and output is produced.
 
 ## Setup Instructions
 
