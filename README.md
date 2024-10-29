@@ -1,13 +1,15 @@
 # Directory Management Project
 
-This project simulates a directory structure with commands to create, move, delete, and list directories. The solution is implemented in Python with logging to track actions & errors. Unit testing is utilized with pytest to validate each command's functionality.
+This project simulates a directory structure with commands to **create**, **move**, **delete**, and **list** directories. The solution is implemented in **Python** with logging to track actions & errors. Unit testing is utilized with **pytest** to validate each command's functionality.
 
-No helper libraries are used except for pytest for testing convenience purposes.  
+No helper libraries are used except for **pytest** for testing convenience purposes.  
 Solution does not create folders on the host machine. Input is taken and output is produced.
 
 ## Setup Instructions
 
-git clone <repository-url>  
+mkdir `<project-directory>`  
+cd `<project-directory>`  
+git clone https://github.com/AlexanPetrov/Endpoint.git  
 cd Endpoint  
 
 ## Environment Setup
